@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  web-video-server:
+    image: jeffreydd/docker.io/jeffreydd/minisub-web-video-server:foxy
+    network_mode: host
+    restart: always

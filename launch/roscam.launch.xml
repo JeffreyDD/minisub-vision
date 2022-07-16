@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="usb_cam" exec="usb_cam_node_exe">
+		<!-- Not supported in ros2, see https://github.com/ros-perception/image_common/issues/239 -->
+		<param name="image_raw.disable_pub_plugins" value="image_transport/compressedDepth" value-sep=", " />
+        </node>
+</launch>
